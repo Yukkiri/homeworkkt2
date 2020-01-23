@@ -8,11 +8,11 @@ class Post(
     val authorId: String,
     val postDate: Date,
     val isPinned: Boolean,
-    var postText: String?, //потому что текста может и не быть?
-    var like: Like,
-    var repost: Repost,
-    var comments: Comments,
-    var view: Views,
+    val postText: String?, //потому что текста может и не быть?
+    val like: Like,
+    val repost: Repost,
+    val comments: Comments,
+    val view: Views,
     val friendsOnly: Boolean,
     val geo: Geo?,
     val authorSign: Int,
@@ -20,5 +20,5 @@ class Post(
     val canDelete: Boolean,
     val canEdit: Boolean,
     val isAd: Boolean,
-    var isFavorite: Boolean
+    val isFavorite: Boolean
 ){}
